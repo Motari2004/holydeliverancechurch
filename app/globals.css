@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#faf8f5] text-gray-800;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-[#c9a84c] text-[#0f1f12] px-6 py-3 rounded-md font-semibold hover:bg-yellow-500 transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-[#c9a84c] text-[#c9a84c] px-6 py-3 rounded-md font-semibold hover:bg-[#c9a84c] hover:text-[#0f1f12] transition-colors duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif text-[#1a4a2a] mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-2xl mx-auto;
+  }
+
+  /* Section background classes */
+  .bg-hero {
+    @apply bg-gradient-to-br from-[#1a4a2a] via-[#2d6a3e] to-[#1a4a2a];
+  }
+
+  .bg-about {
+    @apply bg-gradient-to-r from-[#faf8f5] to-[#f0ece4];
+  }
+
+  .bg-services {
+    @apply bg-gradient-to-b from-[#e8f0e8] to-[#faf8f5];
+  }
+
+  .bg-contact {
+    @apply bg-gradient-to-tr from-[#faf8f5] to-[#e8e0d5];
+  }
+
+  .bg-footer {
+    @apply bg-[#0f1f12];
+  }
+
+  /* Card variations */
+  .card-warm {
+    @apply bg-[#faf8f5] p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .card-light {
+    @apply bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .card-green {
+    @apply bg-[#e8f0e8] p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .card-gold {
+    @apply bg-[#f5edd6] p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+}
